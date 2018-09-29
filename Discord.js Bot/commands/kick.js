@@ -32,5 +32,6 @@ const embed = new Discord.RichEmbed()
 
 module.exports.help = {
 name: "kick",
-group: 'mod'
+group: "mod",
+description: "Kick's the mentioned user for a set reason."
 }
