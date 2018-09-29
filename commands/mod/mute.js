@@ -49,7 +49,7 @@ module.exports = class MuteCommand extends commando.Command {
         member.send('You have been muted in **${msg.guild.name}**.\nReason: ${reason}\nModerator: ${msg.member.user.tag}')
         msg.channel.send(`Successfully muted ${member}. Reason: ${reason}.`);
        let log = this.client.provider.get(msg.guild, 'LogChannel', 'Not Set')
-    let channel = msg.guild.channels.get(i);
+    let channel = msg.guild.channels.get(log);
     if(!channel) return;
     
    let embed = new Discord.RichEmbed()
