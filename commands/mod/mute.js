@@ -61,6 +61,5 @@ module.exports = class MuteCommand extends commando.Command {
    .setColor('RED');
    
    channel.send(embed)
-      })
     }
 };
