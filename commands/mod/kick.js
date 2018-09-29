@@ -1,5 +1,5 @@
 const commando = require('discord.js-commando');
-const Discord = requie('discord.js');
+const Discord = require('discord.js');
 const oneLine = require('common-tags').oneLine;
 
 module.exports = class KickCommand extends commando.Command {
