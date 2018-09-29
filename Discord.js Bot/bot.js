@@ -6,7 +6,7 @@ const TOKEN = "Your Token here"
 
 client.on("ready" () => {
   console.log(`${client.user.username} rocket arrived on Mars!`);
-  client.user.setActivity("Bot Activity");
+  client.user.setActivity(`${cliet.guilds.size} Servers`);
 }
           
 fs.readdir("./commands/", (err, files) => {
@@ -31,7 +31,7 @@ client.on("message", async message => {
    if (message.author.bot) return; 
    if (message.channel.type === "dm") return;
 
-   let prefix = "."
+   let prefix = "bot prefix"
    let messageArray = message.content.split(" ");
    let cmd = messageArray[0].toLowerCase();
    let args = messageArray.slice(1);
