@@ -36,10 +36,10 @@ module.exports = class KickCommand extends commando.Command {
         if (!msg.member.hasPermission("KICK_MEMBERS")) {
             msg.channel.send("Error!! You can't Kick Memebrs here.");
             return;
-        } else if (args.member.kickable) {
-            args.member.kick(args.reason)
+        } else if (member.kickable) {
+            member.kick(reason)
                 .catch(console.error);
-     args.member.send(`You have been kicked from **${msg.guild.name}**.\nReason: ${reason}\nModerator: ${msg.member.user.tag}`);
+     member.send(`You have been kicked from **${msg.guild.name}**.\nReason: ${reason}\nModerator: ${msg.member.user.tag}`);
      msg.channel.send(`Successfully kicked ${member.user.tag} from this server. Reason: ${reason}.`);
      let log = this.client.provider.get(msg.guild, 'LogChannel', 'Not Set');
     let channel = msg.guild.channels.get(log);
