@@ -21,7 +21,7 @@ if(!ch) return message.reply('Error! Unable to find channel.');
 }
 }
 await db.set(`LogChannel_${message.guild.id}`, ch.id);
-message.channel.send('Successfully set logging channel to ${ch}');
+message.channel.send(`Successfully set logging channel to ${ch}`);
 }
 }
 
