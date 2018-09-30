@@ -43,6 +43,7 @@ Command Registry
  client.registry
     .registerGroups([
     ['mod', 'Moderation'],
+    ['config', 'Configuration'],
     ['utility', 'Utility'],
     ['commands', 'Owner/Administration']
     ])
