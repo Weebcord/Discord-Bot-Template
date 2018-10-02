@@ -1,7 +1,9 @@
-const Discord = require("discord.js");
+const { Client, Collection } = require("discord.js");
 const fs = require("fs");
-const client = new Discord.Client({disableEveryone: true});
-client.commands = new Discord.Collection();
+
+const client = new Client({disableEveryone: true});
+client.commands = new Collection();
+
 const TOKEN = "Your Token here"
 
 client.on("ready" () => {
