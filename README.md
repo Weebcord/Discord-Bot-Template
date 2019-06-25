@@ -3,6 +3,7 @@
 ##### A template for anyone to create a discord bot.                                                          
 Made in discord.js and discord.js-commando.
 If you want to make a bot using a framework click **Commando Bot**, otherwise click **Discord.js Bot**.
+It is recommended to use **Discord.js Bot**.
 
 If you need any help using discord.js-commando or discord.js go to:
 [Commando Beginners Guide](https://dragonfire535.gitbooks.io/discord-js-commando-beginners-guide/content/),
